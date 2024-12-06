@@ -1,0 +1,24 @@
+{
+  "name": "giphy",
+  "version": "1.0.0",
+  "description": "FED Assessment for Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avangion/giphy.git"
+  },
+  "keywords": [
+    "giphy",
+    "javascript",
+    "scss"
+  ],
+  "author": "Eduard Sanz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avangion/giphy/issues"
+  },
+  "homepage": "https://github.com/avangion/giphy#readme"
+}
