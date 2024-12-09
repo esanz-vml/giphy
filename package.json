@@ -2,9 +2,9 @@
   "name": "giphy",
   "version": "1.0.0",
   "description": "FED Assessment for Javascript",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,14 @@
   "bugs": {
     "url": "https://github.com/avangion/giphy/issues"
   },
-  "homepage": "https://github.com/avangion/giphy#readme"
+  "homepage": "https://github.com/avangion/giphy#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.2",
+    "parcel": "^2.13.2",
+    "sass": "^1.82.0"
+  },
+  "dependencies": {
+    "core-js": "^3.39.0",
+    "regenerator-runtime": "^0.14.1"
+  }
 }
