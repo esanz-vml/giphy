@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+}
+
+body {
+    box-sizing: border-box;
+    background: $background-main;
+    background-size: contain;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+        'header'
+        'navigation'
+        'main'
+        'footer';
+}
+
+::selection {
+    background-color: $background-main;
+    color: $color-primary-dark;
+}

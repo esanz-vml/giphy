@@ -1,0 +1,17 @@
+@mixin media-breakpoint($breakpoint) {
+    @if $breakpoint ==tablet {
+        @media only screen and (min-width: 56.25rem) {
+            @content
+        }
+
+        ; //900px
+    }
+
+    @if $breakpoint ==desktop {
+        @media only screen and (min-width: 112.5rem) {
+            @content
+        }
+
+        ; //1800
+    }
+}

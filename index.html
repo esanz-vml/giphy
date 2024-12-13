@@ -5,14 +5,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/sass/main.scss" />
     <script type="module" src="src/js/app.js"></script>
 
-    <title>Gifphy APP</title>
+    <title>Gifphy Project</title>
 </head>
 
 <body>
+    <header class="header">
+        <h1>Giphy Project</h1>
+    </header>
+    <nav class="navigation">
+        <div class="navigation__button navigation__button--active navigation__random" data-page=0 title="Random">
+            <svg>
+                <use href="src/img/icons.svg#icon-stats-dots"></use>
+            </svg>
+            <span class="hidden">Random</span>
+        </div>
+        <div class="navigation__button navigation__search" data-page=1 title="Search">
+            <svg>
+                <use href="src/img/icons.svg#icon-binoculars"></use>
+            </svg>
+            <span class="hidden">Search</span>
+        </div>
+        <div class="navigation__button navigation__trending" data-page=2 title="Trending">
+            <svg>
+                <use href="src/img/icons.svg#icon-fire"></use>
+            </svg>
+            <span class="hidden">Trending</span>
+        </div>
+    </nav>
+    <main class="main">
+        <div class="main__container">
+            <section class="section section--0 random">
+                <h2 class="section__title random__title">Random</h2>
+                <div class="random__container">
+                    <!--
+                <div class="random__image">
+                    <img src="${model.image}" alt="${model.title}" />
+                </div>
+            -->
+                </div>
+                <div class="btn random__button">
+                    <svg>
+                        <use href="src/img/icons.svg#icon-loop"></use>
+                    </svg>
+                    <span>Next</span>
+                </div>
+            </section>
+            <section class="section section--1 search">
+                <h2 class="section__title search__title">Finder</h2>
+                <form class="search__form" action="#">
+                    <input type="text" class="search__input" required placeholder="Search">
+                    <button class="search__button">
+                        <svg>
+                            <use href="src/img/icons.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                </form>
+                <div class="search__container">
+                    <!--
+                <div class="search__image">
+                    <img src="${element.image}" alt="${element.title}" />
+                </div>
+                <div class="search__image">
+                    <img src="${element.image}" alt="${element.title}" />
+                </div>
+                <div class="search__image">
+                    <img src="${element.image}" alt="${element.title}" />
+                </div>
+                 -->
+                </div>
+            </section>
+            <section class="section section--2 trending">
+                <h2 class="section__title trending__title">Trending</h2>
+                <div class="trending__container">
+                    <!--
+                <div class="trending__image">
+                    <img src="${element.image}" alt="${element.title}" />
+                </div>
+                <div class="trending__image">
+                    <img src="${element.image}" alt="${element.title}" />
+                </div>
+                <div class="trending__image">
+                    <img src="${element.image}" alt="${element.title}" />
+                </div>
+                -->
+                </div>
 
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Developed by <a href="">Eduard Sanz</a></p>
+        <p>Powered by <a href="https://giphy.com/">Giphy</a></p>
+    </footer>
 </body>
 
 </html>
