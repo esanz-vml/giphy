@@ -3,6 +3,7 @@ import giphyView from './giphyView.js';
 class SearchView extends giphyView {
     _errorMessage = 'Error retrieving search image.';
     _parentElement = document.querySelector('.search__container');
+    _statusElement = document.querySelector('.search__status');
 
     render(model) {
         this._clear();

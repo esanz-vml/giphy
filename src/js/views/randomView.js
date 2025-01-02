@@ -3,6 +3,7 @@ import giphyView from './giphyView.js';
 class RandomView extends giphyView {
     _errorMessage = 'Error retrieving random image.';
     _parentElement = document.querySelector('.random__container');
+    _statusElement = document.querySelector('.random__status');
 
     render(model) {
         const html = `
@@ -16,7 +17,6 @@ class RandomView extends giphyView {
 
     addRandomHandler(handler) {
         document.querySelector(".random__button").addEventListener("click", function (event) {
-            console.log("Random requested...")
             handler();
         });
     }

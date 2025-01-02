@@ -5,6 +5,8 @@ class giphyView {
 
   _clear() {
     this._parentElement.innerHTML = '';
+    this._statusElement.innerHTML = '';
+
   }
 
   renderSpinner() {
@@ -16,22 +18,20 @@ class giphyView {
           </div>
         `;
     this._clear();
-    this._parentElement.insertAdjacentHTML('afterbegin', markup);
+    this._statusElement.insertAdjacentHTML('afterbegin', markup);
   }
 
   renderError(message = this._errorMessage) {
     const markup = `
           <div class="error">
-            <div>
               <svg>
-                <use href="${icons}#icon-alert-triangle"></use>
+                <use href="${icons}#icon-warning"></use>
               </svg>
-            </div>
             <p>${message}</p>
           </div>
         `;
     this._clear();
-    this._parentElement.insertAdjacentHTML('afterbegin', markup);
+    this._statusElement.insertAdjacentHTML('afterbegin', markup);
   }
 }
 
