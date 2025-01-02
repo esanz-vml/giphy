@@ -2,6 +2,11 @@ import ImageCollection from "../models/ImageCollection.js";
 import GiphyController from "./giphyController.js";
 import TrendingView from "../views/trendingView.js";
 
+/**
+ * Trending controller.
+ * @class
+ * @extends GiphyController
+ */
 class TrendingController extends GiphyController {
     constructor() {
         super();

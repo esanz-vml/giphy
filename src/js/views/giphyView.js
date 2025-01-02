@@ -1,5 +1,10 @@
 import icons from 'url:../../img/icons.svg';
 
+/**
+ * View for Giphy API
+ * @abstract
+ * @class
+ */
 class giphyView {
   _errorMessage = 'An error has occurred.';
 
@@ -9,6 +14,9 @@ class giphyView {
 
   }
 
+  /**
+   * Render a spinner
+   */
   renderSpinner() {
     const markup = `
           <div class="spinner">
@@ -21,6 +29,10 @@ class giphyView {
     this._statusElement.insertAdjacentHTML('afterbegin', markup);
   }
 
+  /**
+   * Render an error message
+   * @param {string} message - The error message
+   */
   renderError(message = this._errorMessage) {
     const markup = `
           <div class="error">

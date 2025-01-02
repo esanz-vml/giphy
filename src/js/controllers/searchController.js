@@ -2,6 +2,11 @@ import ImageCollection from "../models/ImageCollection.js";
 import SearchView from "../views/searchView.js";
 import GiphyController from "./giphyController.js";
 
+/**
+ * Search controller.
+ * @class
+ * @extends GiphyController
+ */
 class SearchController extends GiphyController {
     constructor() {
         super();

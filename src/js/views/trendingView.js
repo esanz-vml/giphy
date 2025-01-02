@@ -4,6 +4,11 @@ class TrendingView extends giphyView {
     _errorMessage = 'Error retrieving trending image.';
     _parentElement = document.querySelector('.trending__container');
     _statusElement = document.querySelector('.trending__status');
+
+    /**
+     * Render the trending GIFs.
+     * @param {ImageCollection} model - The image collection model
+     */
     render(model) {
         this._clear();
         let html = '';

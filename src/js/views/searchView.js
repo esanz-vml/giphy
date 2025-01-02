@@ -1,10 +1,19 @@
 import giphyView from './giphyView.js';
 
+/**
+ * Search view.
+ * @class
+ * @extends giphyView
+ */
 class SearchView extends giphyView {
     _errorMessage = 'Error retrieving search image.';
     _parentElement = document.querySelector('.search__container');
     _statusElement = document.querySelector('.search__status');
 
+    /**
+     * Render the searched GIFs.
+     * @param {ImageCollection} model - The image collection model
+     */
     render(model) {
         this._clear();
         let html = '';
@@ -19,6 +28,10 @@ class SearchView extends giphyView {
         this._parentElement.insertAdjacentHTML('beforeend', html);
     }
 
+    /**
+     * Add a handler.
+     * @param {Function} handler - The handler
+     */
     addSearchHandler(handler) {
         document.querySelector(".search__form").addEventListener("submit", function (event) {
             event.preventDefault();

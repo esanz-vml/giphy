@@ -2,6 +2,11 @@ import Image from '../models/Image.js';
 import RandomView from '../views/randomView.js';
 import GiphyController from './giphyController.js';
 
+/**
+ * Random controller.
+ * @class
+ * @extends GiphyController
+ */
 class RandomController extends GiphyController {
     constructor() {
         super();

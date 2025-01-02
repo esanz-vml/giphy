@@ -2,6 +2,7 @@ import RandomController from "./controllers/randomController.js";
 import TrendingController from "./controllers/trendingController.js";
 import SearchController from "./controllers/searchController.js";
 
+// APP Initialization
 
 const randomController = new RandomController();
 const trendingController = new TrendingController();

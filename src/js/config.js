@@ -1,3 +1,6 @@
+/**
+ * @description Configuration file for the Giphy API
+ */
 const config = {
     GIPHY_API_URL: "https://api.giphy.com/v1/gifs/",
     GIPHY_API_KEY: "HvYgkM25Af1yLkVVM1SQ353xdH7G6z08",
